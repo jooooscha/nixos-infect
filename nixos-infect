@@ -46,6 +46,7 @@ makeConf() {
     echo -n "''$trimmed_line'' "
   done <<< "$keys")];
   system.stateVersion = "23.11";
+  users.users.root.password = "admin";
 }
 EOF
 
